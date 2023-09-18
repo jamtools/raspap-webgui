@@ -93,10 +93,10 @@ if (empty($_SESSION['locale']) && strlen($_SERVER['HTTP_ACCEPT_LANGUAGE']) >= 2)
 putenv("LANG=" . $_SESSION['locale']);
 setlocale(LC_ALL, $_SESSION['locale']);
 
-bindtextdomain(LOCALE_DOMAIN, LOCALE_ROOT);
-bind_textdomain_codeset(LOCALE_DOMAIN, 'UTF-8');
+bindtextdomain('LOCALE_DOMAIN', 'LOCALE_ROOT');
+bind_textdomain_codeset('LOCALE_DOMAIN', 'UTF-8');
 
-textdomain(LOCALE_DOMAIN);
+textdomain('LOCALE_DOMAIN');
 
 function getLocales()
 {
