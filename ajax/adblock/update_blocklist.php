@@ -1,6 +1,5 @@
 <?php
 
-require '../../includes/csrf.php';
 require_once '../../includes/config.php';
 
 if (isset($_POST['blocklist_id'])) {

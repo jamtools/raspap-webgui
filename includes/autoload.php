@@ -13,7 +13,7 @@ spl_autoload_register(function ($class) {
     $prefix = '';
 
     // base directory for the namespace prefix
-    $base_dir = 'src/';
+    $base_dir = $_SERVER['DOCUMENT_ROOT'] .'/src/';
 
     // normalize the base directory with a trailing separator
     $base_dir = rtrim($base_dir, DIRECTORY_SEPARATOR) . '/';

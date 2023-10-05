@@ -1,8 +1,8 @@
 <?php
 
-require '../../includes/csrf.php';
+require_once '../../includes/autoload.php';
+require_once '../../includes/csrf.php';
 require_once '../../includes/config.php';
-require_once '../../includes/functions.php';
 
 if (isset($_POST['cfg_id'])) {
     $ovpncfg_id = escapeshellcmd($_POST['cfg_id']);

@@ -50,8 +50,6 @@
       <div class="card-body">
         <?php $status->showMessages(); ?>
         <form role="form" action="hostapd_conf" method="POST">
-          <?php echo CSRFTokenFieldTag() ?>
-
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" id="basictab" href="#basic" aria-controls="basic" data-toggle="tab"><?php echo _("Basic"); ?></a></li>

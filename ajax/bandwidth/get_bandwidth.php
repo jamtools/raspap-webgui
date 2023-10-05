@@ -1,8 +1,7 @@
 <?php
 
-require '../../includes/csrf.php';
-
-require_once '../../includes/config.php';
+require_once '../../includes/autoload.php';
+require_once '../../includes/csrf.php';
 
 $interface = filter_input(INPUT_GET, 'inet', FILTER_SANITIZE_SPECIAL_CHARS);
 if (empty($interface)) {
@@ -81,5 +80,4 @@ for ($i = count($jsonData) - 1; $i >= 0; --$i) {
 }
 
 echo ' ]';
-
 

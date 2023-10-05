@@ -28,7 +28,6 @@
         <div class="card-body">
         <?php $status->showMessages(); ?>
           <form role="form" action="adblock_conf" enctype="multipart/form-data" method="POST">
-            <?php echo CSRFTokenFieldTag() ?>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link active" id="blocklisttab" href="#adblocklistsettings" data-toggle="tab"><?php echo _("Blocklist settings"); ?></a></li>
@@ -50,5 +49,5 @@
         <div class="card-footer"><?php echo _("Information provided by adblock"); ?></div>
       </div><!-- /.card -->
     </div><!-- /.col-lg-12 -->
-  </div><!-- /.row -->
+  </div><!-- /.row - $csrfToken->
 

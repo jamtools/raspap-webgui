@@ -1,6 +1,5 @@
 <?php
 
-require '../../includes/csrf.php';
 require_once '../../includes/config.php';
 
 exec('cat '. RASPI_HOSTAPD_CONFIG, $hostapdconfig);

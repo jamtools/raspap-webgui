@@ -9,8 +9,10 @@ require_once 'includes/functions.php';
  */
 function DisplayDashboard(&$extraFooterScripts)
 {
-    getWifiInterface();
     $status = new \RaspAP\Messages\StatusMessage;
+    //$csrfToken = new \RaspAP\Tokens\CSRFTokenizer;
+
+    getWifiInterface();
     // Need this check interface name for proper shell execution.
     if (!preg_match('/^([a-zA-Z0-9]+)$/', $_SESSION['wifi_client_interface'])) {
         $status->addMessage(_('Interface name invalid.'), 'danger');
