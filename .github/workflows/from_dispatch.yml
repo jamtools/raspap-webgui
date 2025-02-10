@@ -61,5 +61,5 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: rpi-deploy.img.zip
+          name: rpi-deploy-${{ matrix.arch }}.img.zip
           path: ${{ steps.build.outputs.image-path }}
